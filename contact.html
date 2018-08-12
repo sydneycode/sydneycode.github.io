@@ -5,21 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Info</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
-    <header>Your Name
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href=#>Contact</a>
+    <header>
+        <div id="header-content">
+            <div id="my-name">
+                <h1>Your Name</h1>
+            </div>
+            <div id="site-map">
+                <a id="index-link" href="index.html">About</a> | 
+                <a id="port-link" href="portfolio.html">Portfolio</a> | 
+                <a id="contact-link" href="contact.html">Contact</a>
+            </div>
+        </div>
     </header>
-    <h1>Contact</h1>
-    <label>Name</label><br>
-    <input type="text" value="John Smith"/><br>
-    <label>Email</label><br>
-    <input type="text" value="example@gmail.com"/><br>
-    <label>Message</label><br>
-    <input type="text"/><br>
-    <button type="button">Submit</button>
+    <div id="below-header"></div>
+    <div id="page-bkgrnd">
+        <div id="main-page">
+            <h2>Contact</h2>
+            <div id="below-contact"></div>
+            <div id="c-name">
+                <label>Name</label><br>
+                <input type="text" value="John Smith"/><br>
+            </div>
+            <div id="c-email">
+                <label>Email</label><br>
+                <input type="text" value="example@gmail.com"/><br>
+            </div>
+            <div id="c-message">
+                <label>Message</label><br>
+                <textarea id="message-box"></textarea><br>
+            </div>
+            <!-- <button type="button">Submit</button> -->
+            <input id="submit" type="submit"></input>
+        </div>
+    </div>
+    <div id="above-footer"></div>
     <footer>Copyright ©</footer>
-</body>
 </html>
