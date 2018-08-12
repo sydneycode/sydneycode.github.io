@@ -36,6 +36,14 @@ p, label, input, textarea {
     line-height: 36px;
 }
 
+ul {
+    font-family: serif;
+    font-size: 24px;
+    list-style-type: none;
+    margin: 20px;
+    padding: 0px;
+}
+
 p {
     padding-left: 30px;
     padding-right: 30px;
@@ -131,11 +139,15 @@ a {
     float: left;
 }
 
-#below-about-me, #below-contact {
+#below-about-me, #below-contact, #below-port {
     background: grey;
     height: 5px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+#below-port {
+    margin-bottom: 40px;
 }
 
 #page-bkgrnd {
@@ -178,8 +190,36 @@ a {
     height: 100%;
 } 
 
+.project {
+    height: 200px;
+    width: 300px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    
+}
 
+#port {
+    border: lightgrey solid 3px;
+    background: white;
+    margin: auto;
+    width: 960px;
+}
+
+.clearfix {
+    overflow: auto;
+ }
 
 /* div {
     border: red solid 10px;
 } */
+
+li {
+    background: teal;
+    color: white;
+    position: relative;
+    /* top: -100px; */
+    bottom: 100px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
