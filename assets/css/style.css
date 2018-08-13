@@ -1,29 +1,35 @@
 
 header {
-    /* border: red solid 10px; */
+    background: #ffffff;
     float: left;
     width: 100%;
-}
-
-#main-page {
-    border: lightgrey solid 3px;
-    background: white;
-    margin: auto;
-    width: 960px;
-    clear: both;    
+    border-bottom: #cccccc solid 5px;
 }
 
 footer {
-    background: grey;
-    color: white;
+    background: #666666;
+    color: #ffffff;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     padding-top: 50px;
     padding-bottom: 5px;
+    border-top: #4aaaa5 solid 10px;
+
+    /* Making the Footer stick to bottom of page */
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;  */
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 h2 {
-    color: teal;
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 30px;
     padding-left: 30px;
     padding-top: 15px;
@@ -31,17 +37,10 @@ h2 {
 }
 
 p, label, input, textarea {
-    font-family: sans-serif;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 16px;
     line-height: 36px;
-}
-
-ul {
-    font-family: serif;
-    font-size: 24px;
-    list-style-type: none;
-    margin: 20px;
-    padding: 0px;
 }
 
 p {
@@ -49,98 +48,98 @@ p {
     padding-right: 30px;
 }
 
-/* label {
-    padding-left: 30px;
-    padding-right: 30px;
-} */
-
 input, textarea {
-    /* width: 100%;
-    height: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 20px; */
     padding-left: 20px;
     padding-right: 20px;
     width: 860px;
 }
 
 a {
-    color: grey;
+    color: #777777;
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-/* button {
-    color: white;
-    background: teal;
-    font-size: 16px;
-    border: none;
-    padding: 10px 30px 10px 30px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-} */
-
-#submit {
-    color: white;
-    background: teal;
-    font-size: 16px;
-    border: none;
-    width: 120px;
-    /* padding: 10px 30px 10px 30px; */
-    margin-left: 20px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+ul {
+    font-family: 'Georgia', Times, Times New Roman, serif;;
+    font-size: 24px;
+    list-style-type: none;
+    margin: 20px;
+    padding: 0px;
 }
 
-#contact-link {
-    padding-right: 0px;
+li {
+    background: #4aaaa5;
+    color: #ffffff;
+    position: relative;
+    bottom: 100px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
 }
 
-#header-content {
+.main-page {
+    border: #dddddd solid 3px;
+    background: #ffffff;
+    margin: auto;
     width: 960px;
-    /* border: red solid 10px; */
+    clear: both;    
+}
+
+.header-content {
+    width: 960px;
     margin: auto;
 }
 
-#my-name {
-    /* border:green solid 10px; */
-    background: teal;
-    color: white;
+.my-name {
+    background: #4aaaa5;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
     float: left;
 }
 
-#site-map {
-    font-family: sans-serif;
-    color: lightgrey;
-    /* border: green solid 10px; */
+.site-map {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #dddddd;
     padding-top: 30px;
     padding-bottom: 30px;
     float: right;
-    
 }
 
-#below-header {
-    background: grey;
-    height: 5px;
-    float: left;
+.page-bkgrnd {
+    background-image: url("../images/light-grey-terrazzo.png");
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 120px;
+    width: 100%;
     clear: both;
-    width: 100%
-    
+}
+
+.project {
+    height: 200px;
+    width: 300px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 60px;
+}
+
+/* Applying Clearfix Hack to the Portfolio Page */
+.clearfix {
+    overflow: auto;
+ }
+
+#contact-link {
+    padding-right: 0px;
 }
 
 #pic {
-    padding: 30px 30px 30px 30px;
+    padding: 30px;
     float: left;
 }
 
 #below-about-me, #below-contact, #below-port {
-    background: grey;
+    background: #dddddd;
     height: 5px;
     margin-left: 20px;
     margin-right: 20px;
@@ -150,76 +149,44 @@ a {
     margin-bottom: 40px;
 }
 
-#page-bkgrnd {
-    background-image: url("../images/light-grey-terrazzo.png");
-    height: 100%;
-    /* border: red solid 10px; */
-    padding-top: 40px;
-    padding-bottom: 120px;
-    width: 100%;
-    clear: both;
-    
+#main-page-contact {
+    border: #dddddd solid 3px;
+    background: #ffffff;
+    margin: auto;
+    width: 960px;
+    clear: both;    
+    margin-bottom: 200px;
 }
-
-#above-footer {
-    background: teal;
-    height: 10px;
-}
-
-/* body {
-    background-image: url("../images/light-grey-terrazzo.png");
-}  */
 
 #c-name, #c-email {
-    /* border: red solid 10px; */
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
 }
 
 #c-message {
-    /* border: red solid 10px; */
     height: 200px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin: 10px 20px 30px 20px;
 }
 
 #message-box {
     height: 100%;
 } 
 
-.project {
-    height: 200px;
-    width: 300px;
-    float: left;
-    margin-right: 40px;
-    margin-bottom: 60px;
-    
+#submit {
+    color: #ffffff;
+    background: #4aaaa5;
+    font-size: 16px;
+    border: none;
+    width: 120px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 #port {
-    border: lightgrey solid 3px;
-    background: white;
+    border: #dddddd solid 3px;
+    background: #ffffff;
     margin: auto;
     width: 960px;
-}
-
-.clearfix {
-    overflow: auto;
- }
-
-/* div {
-    border: red solid 10px;
-} */
-
-li {
-    background: teal;
-    color: white;
-    position: relative;
-    /* top: -100px; */
-    bottom: 100px;
-    padding: 20px 0px 20px 0px;
-    text-align: center;
 }
